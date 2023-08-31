@@ -12,57 +12,57 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-    Button btn1row1, btn2row1, btn3row1, btn1row2, btn2row2, btn3row2, btn1row3, btn2row3, btn3row3;
+    Button lfttop, lftcntr, btmlft, btmrt, btmcnr, cntrtop, cntr, rtcntr, rttop;
     int turn_round;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn1row1 = (Button) findViewById(R.id.lfttop);
-        btn2row1 = (Button) findViewById(R.id.cntrtop);
-        btn3row1 = (Button) findViewById(R.id.rttop);
-        btn1row2 = (Button) findViewById(R.id.rtcntr);
-        btn2row2 = (Button) findViewById(R.id.cntr);
-        btn3row2 = (Button) findViewById(R.id.lftcntr);
-        btn1row3 = (Button) findViewById(R.id.btmrt);
-        btn2row3 = (Button) findViewById(R.id.btmcnr);
-        btn3row3 = (Button) findViewById(R.id.btmlft);
+        lfttop = (Button) findViewById(R.id.lfttop);
+        cntrtop = (Button) findViewById(R.id.cntrtop);
+        rttop = (Button) findViewById(R.id.rttop);
+        rtcntr = (Button) findViewById(R.id.rtcntr);
+        cntr = (Button) findViewById(R.id.cntr);
+        lftcntr = (Button) findViewById(R.id.lftcntr);
+        btmrt = (Button) findViewById(R.id.btmrt);
+        btmcnr = (Button) findViewById(R.id.btmcnr);
+        btmlft = (Button) findViewById(R.id.btmlft);
 
         turn_round = 1;
 
-        btn1row1.setOnClickListener(new View.OnClickListener() {
+        lfttop.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn1row1.getText().toString().equals("")) {
+                if (lfttop.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn1row1.setText("X");
+                        lfttop.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn1row1.setText("O");
+                        lfttop.setText("O");
                     }
                 }
                 endGame();
             }
         });
 
-        btn2row1.setOnClickListener(new View.OnClickListener() {
+        cntrtop.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn2row1.getText().toString().equals("")) {
+                if (cntrtop.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn2row1.setText("X");
+                        cntrtop.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn2row1.setText("O");
+                        cntrtop.setText("O");
                     }
                 }
 
@@ -70,133 +70,133 @@ public class MainActivity extends Activity {
             }
         });
 
-        btn3row1.setOnClickListener(new View.OnClickListener() {
+        rttop.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn3row1.getText().toString().equals("")) {
+                if (rttop.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn3row1.setText("X");
+                        rttop.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn3row1.setText("O");
+                        rttop.setText("O");
                     }
                 }
                 endGame();
             }
         });
 
-        btn1row2.setOnClickListener(new View.OnClickListener() {
+        lftcntr.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn1row2.getText().toString().equals("")) {
+                if (lftcntr.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn1row2.setText("X");
+                        lftcntr.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn1row2.setText("O");
+                        lftcntr.setText("O");
                     }
                 }
                 endGame();
             }
         });
 
-        btn2row2.setOnClickListener(new View.OnClickListener() {
+        cntr.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn2row2.getText().toString().equals("")) {
+                if (cntr.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn2row2.setText("X");
+                        cntr.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn2row2.setText("O");
+                        cntr.setText("O");
                     }
                 }
                 endGame();
             }
         });
 
-        btn3row2.setOnClickListener(new View.OnClickListener() {
+        rtcntr.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn3row2.getText().toString().equals("")) {
+                if (rtcntr.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn3row2.setText("X");
+                        rtcntr.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn3row2.setText("O");
+                        rtcntr.setText("O");
                     }
                 }
                 endGame();
             }
         });
 
-        btn1row3.setOnClickListener(new View.OnClickListener() {
+        btmlft.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn1row3.getText().toString().equals("")) {
+                if (btmlft.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn1row3.setText("X");
+                        btmlft.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn1row3.setText("O");
+                        btmlft.setText("O");
                     }
                 }
                 endGame();
             }
         });
 
-        btn2row3.setOnClickListener(new View.OnClickListener() {
+        btmcnr.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn2row3.getText().toString().equals("")) {
+                if (btmcnr.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn2row3.setText("X");
+                        btmcnr.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn2row3.setText("O");
+                        btmcnr.setText("O");
                     }
                 }
                 endGame();
             }
         });
 
-        btn3row3.setOnClickListener(new View.OnClickListener() {
+        btmrt.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                if (btn3row3.getText().toString().equals("")) {
+                if (btmrt.getText().toString().equals("")) {
                     if (turn_round == 1) {
                         turn_round = 2;
-                        btn3row3.setText("X");
+                        btmrt.setText("X");
                     } else if (turn_round == 2) {
                         turn_round = 1;
-                        btn3row3.setText("O");
+                        btmrt.setText("O");
                     }
                 }
                 endGame();
@@ -210,141 +210,141 @@ public class MainActivity extends Activity {
         boolean end = false;
 
 
-        a = btn1row1.getText().toString();
-        b = btn2row1.getText().toString();
-        c = btn3row1.getText().toString();
-        d = btn1row2.getText().toString();
-        e = btn2row2.getText().toString();
-        f = btn3row2.getText().toString();
-        g = btn1row3.getText().toString();
-        h = btn2row3.getText().toString();
-        i = btn3row3.getText().toString();
+        a = lfttop.getText().toString();
+        b = cntrtop.getText().toString();
+        c = rttop.getText().toString();
+        d = lftcntr.getText().toString();
+        e = cntr.getText().toString();
+        f = rtcntr.getText().toString();
+        g = btmlft.getText().toString();
+        h = btmcnr.getText().toString();
+        i = btmrt.getText().toString();
 
         if (a.equals("X") && b.equals("X") && c.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn1row1.setBackgroundColor(Color.GRAY);
-            btn2row1.setBackgroundColor(Color.GRAY);
-            btn3row1.setBackgroundColor(Color.GRAY);
+            lfttop.setBackgroundColor(Color.GRAY);
+            cntrtop.setBackgroundColor(Color.GRAY);
+            rttop.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (a.equals("X") && d.equals("X") && g.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn1row1.setBackgroundColor(Color.GRAY);
-            btn1row2.setBackgroundColor(Color.GRAY);
-            btn1row3.setBackgroundColor(Color.GRAY);
+            lfttop.setBackgroundColor(Color.GRAY);
+            lftcntr.setBackgroundColor(Color.GRAY);
+            btmlft.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (a.equals("X") && e.equals("X") && i.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn1row1.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn3row3.setBackgroundColor(Color.GRAY);
+            lfttop.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            btmrt.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (b.equals("X") && e.equals("X") && h.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn2row1.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn2row3.setBackgroundColor(Color.GRAY);
+            cntrtop.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            btmcnr.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (c.equals("X") && e.equals("X") && g.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn3row1.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn1row3.setBackgroundColor(Color.GRAY);
+            rttop.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            btmlft.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (c.equals("X") && f.equals("X") && i.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn3row1.setBackgroundColor(Color.GRAY);
-            btn3row2.setBackgroundColor(Color.GRAY);
-            btn3row3.setBackgroundColor(Color.GRAY);
+            rttop.setBackgroundColor(Color.GRAY);
+            rtcntr.setBackgroundColor(Color.GRAY);
+            btmrt.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (d.equals("X") && e.equals("X") && f.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn1row2.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn3row2.setBackgroundColor(Color.GRAY);
+            lftcntr.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            rtcntr.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (g.equals("X") && h.equals("X") && i.equals("X")) {
             Toast.makeText(getApplicationContext(), "Winner is X", Toast.LENGTH_SHORT).show();
-            btn1row3.setBackgroundColor(Color.GRAY);
-            btn2row3.setBackgroundColor(Color.GRAY);
-            btn3row3.setBackgroundColor(Color.GRAY);
+            btmlft.setBackgroundColor(Color.GRAY);
+            btmcnr.setBackgroundColor(Color.GRAY);
+            btmrt.setBackgroundColor(Color.GRAY);
             end = true;
         }
 
 
         if (a.equals("O") && b.equals("O") && c.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn1row1.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn3row3.setBackgroundColor(Color.GRAY);
+            lfttop.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            btmrt.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (a.equals("O") && d.equals("O") && g.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn1row1.setBackgroundColor(Color.GRAY);
-            btn1row2.setBackgroundColor(Color.GRAY);
-            btn1row3.setBackgroundColor(Color.GRAY);
+            lfttop.setBackgroundColor(Color.GRAY);
+            lftcntr.setBackgroundColor(Color.GRAY);
+            btmlft.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (a.equals("O") && e.equals("O") && i.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn1row1.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn3row3.setBackgroundColor(Color.GRAY);
+            lfttop.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            btmrt.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (b.equals("O") && e.equals("O") && h.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn2row1.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn2row3.setBackgroundColor(Color.GRAY);
+            cntrtop.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            btmcnr.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (c.equals("O") && e.equals("O") && g.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn3row1.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn1row3.setBackgroundColor(Color.GRAY);
+            rttop.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            btmlft.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (c.equals("O") && f.equals("O") && i.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn3row1.setBackgroundColor(Color.GRAY);
-            btn3row2.setBackgroundColor(Color.GRAY);
-            btn3row3.setBackgroundColor(Color.GRAY);
+            rttop.setBackgroundColor(Color.GRAY);
+            rtcntr.setBackgroundColor(Color.GRAY);
+            btmrt.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (d.equals("O") && e.equals("O") && f.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn1row2.setBackgroundColor(Color.GRAY);
-            btn2row2.setBackgroundColor(Color.GRAY);
-            btn3row2.setBackgroundColor(Color.GRAY);
+            lftcntr.setBackgroundColor(Color.GRAY);
+            cntr.setBackgroundColor(Color.GRAY);
+            rtcntr.setBackgroundColor(Color.GRAY);
             end = true;
         }
         if (g.equals("O") && h.equals("O") && i.equals("O")) {
             Toast.makeText(getApplicationContext(), "Winner is O", Toast.LENGTH_SHORT).show();
-            btn1row3.setBackgroundColor(Color.GRAY);
-            btn2row3.setBackgroundColor(Color.GRAY);
-            btn3row3.setBackgroundColor(Color.GRAY);
+            btmlft.setBackgroundColor(Color.GRAY);
+            btmcnr.setBackgroundColor(Color.GRAY);
+            btmrt.setBackgroundColor(Color.GRAY);
             end = true;
         }
 
         if (end) {
-            btn1row1.setEnabled(false);
-            btn2row1.setEnabled(false);
-            btn3row1.setEnabled(false);
-            btn1row2.setEnabled(false);
-            btn2row2.setEnabled(false);
-            btn3row2.setEnabled(false);
-            btn1row3.setEnabled(false);
-            btn2row3.setEnabled(false);
-            btn3row3.setEnabled(false);
+            lfttop.setEnabled(false);
+            cntrtop.setEnabled(false);
+            rttop.setEnabled(false);
+            lftcntr.setEnabled(false);
+            cntr.setEnabled(false);
+            rtcntr.setEnabled(false);
+            btmlft.setEnabled(false);
+            btmcnr.setEnabled(false);
+            btmrt.setEnabled(false);
         }
     }
 
